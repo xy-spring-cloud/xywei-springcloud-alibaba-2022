@@ -3,5 +3,11 @@ spring:
     nacos:
       config:
         file-extension: yaml
-      discovery:
         server-addr: 192.168.126.147:8848
+        namespace: 84b61820-7aeb-4015-9473-8997af710ff1
+        group: ORDER_PROVIDER
+  application:
+    name: order.provider
+  profiles:
+    active: dev
+

@@ -2,7 +2,7 @@ server:
   port: 10001
 spring:
   application:
-    name: order-consumer
+    name: order.consumer
   cloud:
     nacos:
       discovery:
@@ -14,5 +14,5 @@ management:
         include: info,health,beans,env
 
 provider:
-  order-provider: order-provider
+  order.provider: order.provider
 

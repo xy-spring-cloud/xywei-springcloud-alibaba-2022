@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Component
-@FeignClient(value = "${provider.order-provider}")
+@FeignClient(value = "${provider.order.provider}")
 public interface OrderServiceFeign {
 
     @GetMapping("/getOrder")

@@ -27,7 +27,7 @@ public class OrderController {
 
     @GetMapping("/getOrder")
     public String getOrder() {
-        ServiceInstance serviceInstance = loadBalancerClient.choose("order-provider");
+        ServiceInstance serviceInstance = loadBalancerClient.choose("order.provider");
         log.info("serviceInstance is: {}", serviceInstance);
         String requestUrl = String.format("http://%s:%s/getOrder", serviceInstance.getHost(), serviceInstance.getPort());
         String result = restTemplate.getForObject(requestUrl, String.class);

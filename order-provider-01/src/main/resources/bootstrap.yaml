@@ -1,11 +1,12 @@
+# 使用默认的命名空间
 spring:
-  profiles:
-    active: dev
   cloud:
     nacos:
       config:
         file-extension: yaml
-      discovery:
         server-addr: 192.168.126.147:8848
-server:
-  port: 11001
+  application:
+    name: order.provider
+  profiles:
+    active: dev
+

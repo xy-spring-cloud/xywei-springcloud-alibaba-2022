@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.126.147:8848
+        namespace: a15aba9d-7036-47ce-b9f8-27cd8c589f49
+        group: ORDER_PROVIDER
+  application:
+    name: order.provider
+  profiles:
+    active: dev
+
