@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/order-consumer-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-consumer-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-consumer-03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-provider-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-provider-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-provider-03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-provider-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-provider-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-provider-03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xywei-common/src/main/java" charset="UTF-8" />
+  </component>
+</project>

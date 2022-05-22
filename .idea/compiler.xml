@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="order-consumer-02" />
+        <module name="order-consumer-03" />
+        <module name="order-consumer-01" />
+        <module name="order-provider-03" />
+        <module name="payment-provider-03" />
+        <module name="xywei-common" />
+        <module name="order-provider-02" />
+        <module name="payment-provider-02" />
+        <module name="order-provider-01" />
+        <module name="payment-provider-01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order-provider" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order-consumer-01" options="-parameters" />
+      <module name="order-consumer-02" options="-parameters" />
+      <module name="order-consumer-03" options="-parameters" />
+      <module name="order-provider" options="-parameters" />
+      <module name="order-provider-01" options="-parameters" />
+      <module name="order-provider-02" options="-parameters" />
+      <module name="order-provider-03" options="-parameters" />
+      <module name="payment-provider-01" options="-parameters" />
+      <module name="payment-provider-02" options="-parameters" />
+      <module name="payment-provider-03" options="-parameters" />
+      <module name="xywei-common" options="-parameters" />
+    </option>
+  </component>
+</project>
