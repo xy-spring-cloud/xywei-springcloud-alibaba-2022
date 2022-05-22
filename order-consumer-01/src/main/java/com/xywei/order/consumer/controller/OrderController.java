@@ -1,5 +1,6 @@
 package com.xywei.order.consumer.controller;
 
+import com.xywei.order.consumer.openfeign.OrderServiceFeign;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -18,8 +19,11 @@ public class OrderController {
     @Resource
     private RestTemplate restTemplate;
 
-    @Autowired
+    @Resource
     private LoadBalancerClient loadBalancerClient;
+
+    @Resource
+    private OrderServiceFeign orderServiceFeign;
 
     @GetMapping("/getOrder")
     public String getOrder() {
@@ -28,6 +32,11 @@ public class OrderController {
         String requestUrl = String.format("http://%s:%s/getOrder", serviceInstance.getHost(), serviceInstance.getPort());
         String result = restTemplate.getForObject(requestUrl, String.class);
         return result;
+    }
+
+    @GetMapping("/getOrderByFeign")
+    public String getOrderByFeign() {
+        return orderServiceFeign.getOrder();
     }
 
 }

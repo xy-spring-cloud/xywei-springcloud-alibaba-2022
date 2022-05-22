@@ -12,9 +12,15 @@ public class OrderController {
     @Value("${server.port}")
     private Integer port;
 
+    @Value(("${app.version}"))
+    private String appVersion;
+
+    @Value("${spring.profiles.active}")
+    private String env;
+
     @GetMapping("/getOrder")
     public String getOrderNo() {
-        return UUID.randomUUID().toString()+":"+port;
+        return UUID.randomUUID().toString() + ":" + env + ":" + port + ":" + appVersion;
     }
 
 }

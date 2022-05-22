@@ -1,12 +1,10 @@
-server:
-  port: 11001
+app:
+  version: 1.0.0
+
 spring:
   application:
     name: order-provider
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 192.168.126.147:8848
+
 management:
   endpoints:
     web:
