@@ -9,5 +9,5 @@ spring:
   application:
     name: order.provider
   profiles:
-    active: dev
+    active: pro
 
