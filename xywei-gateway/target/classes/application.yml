@@ -17,6 +17,7 @@ spring:
           uri: lb://order.consumer
           predicates:
             - Path=/api/**
+            - Method=GET
           filters:
             - StripPrefix=1
   main:
