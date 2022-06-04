@@ -1,12 +1,16 @@
+# 使用默认的命名空间
 spring:
   cloud:
     nacos:
       config:
         file-extension: yaml
         server-addr: 192.168.126.147:8848
+    sentinel:
+      transport:
+        dashboard: 192.168.126.147:8080
+        port: 8719
   application:
     name: order.provider
   profiles:
     active: dev
-server:
-  port: 21001
+

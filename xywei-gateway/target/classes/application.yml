@@ -1,0 +1,23 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: xywei.gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.126.147:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lower-case-service-id: true
+      routes:
+        - id: consumer
+          uri: lb://order.consumer
+          predicates:
+            - Path=/api/**
+          filters:
+            - StripPrefix=1
+  main:
+    web-application-type: reactive

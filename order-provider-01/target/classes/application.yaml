@@ -1,2 +1,2 @@
 server:
-  port: 21001
+  port: 21001 # 没有用，优先nacos config
