@@ -16,8 +16,9 @@ spring:
         - id: consumer
           uri: lb://order.consumer
           predicates:
-            - Path=/api/**
+            - Path=/api/**,/consumer/**
             - Method=GET
+            - Header=Api-Token
           filters:
             - StripPrefix=1
   main:
